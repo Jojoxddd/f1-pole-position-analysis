@@ -2,7 +2,7 @@
 
 Project kecil untuk latihan analisis data, pakai topik yang saya suka: Formula 1. Pertanyaannya sederhana, kalau seorang pembalap start dari posisi paling depan, seberapa besar kemungkinan dia menang?
 
-Dashboard: <ISI_LINK_DASHBOARD>
+Dashboard: 
 
 ## Kenapa saya bikin ini
 

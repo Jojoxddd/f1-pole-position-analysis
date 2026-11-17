@@ -8,3 +8,6 @@ jupyter
 streamlit
 altair
 skicit-learn
+streamlit==1.67.0
+pandas
+numpy

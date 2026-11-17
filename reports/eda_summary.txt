@@ -1,0 +1,11 @@
+
+=== RINGKASAN ANGKA UTAMA ===
+Periode: 2010 - 2026 (348 balapan)
+Menang dari P1 : 53.2% (185 dari 348)
+Podium dari P1 : 80.5%
+Start P1: menang 53.2%, podium 80.5%, DNF 8.3%
+Start P2: menang 25.1%, podium 69.5%, DNF 8.6%
+Start P3: menang 10.1%, podium 50.6%, DNF 11.5%
+Sirkuit dengan P1 paling sering menang : Yas Marina Circuit (75%, n=16)
+Sirkuit dengan P1 paling jarang menang : Sochi Autodrom (25%, n=8)
+Musim lengkap tertinggi: 2025 (67%), terendah: 2019 (38%)

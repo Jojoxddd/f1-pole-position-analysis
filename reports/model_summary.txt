@@ -1,0 +1,26 @@
+=== 1. DATA ===
+Latih : musim 2010-2022 (259 balapan, 5513 baris)
+Uji   : musim 2023-2026 (89 balapan, 1816 baris)
+Proporsi podium di data uji: 14.7% (3 dari sekitar 20 pembalap)
+Fitur : ['grid_adj', 'team_form_pts', 'team_form_rank', 'driver_form_pts', 'driver_form_rank']
+
+=== 2. PERBANDINGAN MODEL (pada data uji) ===
+                                  Model  Podium benar per balapan (dari 3)  Podium persis benar (%)  Pemenang benar (%)  ROC AUC  Average precision  Log loss
+            A. Aturan: 3 start terdepan                               2.01                    23.60               60.67     0.92               0.68       NaN
+B. Regresi logistik (posisi start saja)                               2.01                    23.60               60.67     0.92               0.68      0.24
+      C. Regresi logistik (semua fitur)                               2.03                    21.35               57.30     0.94               0.73      0.22
+     D. Gradient boosting (semua fitur)                               1.99                    21.35               58.43     0.94               0.72      0.21
+
+Cara membaca: 'Podium benar per balapan' adalah rata-rata berapa dari 3 tebakan yang tepat (0 sampai 3). Tebakan acak kira-kira 0,45; sempurna adalah 3.
+
+Model terbaik menurut 'podium benar per balapan': C. Regresi logistik (semua fitur)
+Selisih dibanding aturan 'start terdepan': +0.02 dari 3 per balapan
+
+=== 3. PENTINGNYA FITUR (gradient boosting) ===
+Angka = seberapa turun ROC AUC jika fitur itu diacak. Makin besar = makin penting.
+           fitur  penurunan_auc   std
+        grid_adj          0.112 0.008
+   team_form_pts          0.026 0.004
+ driver_form_pts          0.019 0.003
+driver_form_rank          0.004 0.002
+  team_form_rank          0.001 0.001

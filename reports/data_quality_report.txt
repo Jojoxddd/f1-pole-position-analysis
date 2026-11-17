@@ -1,0 +1,158 @@
+=== 1. UKURAN DATA ===
+results   : 7329 baris, 16 kolom
+qualifying: 7304 baris, 10 kolom
+Musim     : 2010 - 2026
+Jumlah balapan: 348
+
+=== 2. NILAI KOSONG (results) ===
+Series([], )
+
+Baris duplikat (musim+ronde+pembalap): 0
+
+Balapan per musim (cek apakah ada musim yang janggal):
+season
+2010    19
+2011    19
+2012    20
+2013    19
+2014    19
+2015    19
+2016    21
+2017    20
+2018    21
+2019    21
+2020    17
+2021    22
+2022    22
+2023    22
+2024    24
+2025    24
+2026    19
+
+=== 3. GABUNG KUALIFIKASI ===
+Baris tanpa data kualifikasi: 30
+Rincian per musim:
+season
+2011    4
+2012    4
+2014    2
+2015    4
+2016    5
+2017    2
+2019    2
+2021    1
+2025    1
+2026    5
+Contoh baris tanpa kualifikasi:
+      season  round              driver     constructor  grid  position       status
+535     2011      4     Kamui Kobayashi          Sauber    24        10     Finished
+557     2011      5       Nick Heidfeld         Renault    24         8       +1 Lap
+722     2011     12  Michael Schumacher        Mercedes    24         5     Finished
+873     2011     18  Rubens Barrichello        Williams    24        12       +1 Lap
+1038    2012      6        Sergio Pérez          Sauber    23        11       +1 Lap
+1099    2012      8          Timo Glock        Marussia     0        24     Withdrew
+1216    2012     13     Nico Hülkenberg     Force India    24        21       Brakes
+1287    2012     16  Narain Karthikeyan             HRT    23        20      +2 Laps
+2196    2014     19    Daniel Ricciardo        Red Bull    20         4     Finished
+2200    2014     19    Sebastian Vettel        Red Bull    19         8     Finished
+2250    2015      2        Will Stevens  Manor Marussia     0        20  Fuel system
+2290    2015      4       Jenson Button         McLaren    20        20          ERS
+2349    2015      7       Jenson Button         McLaren    20        19      Retired
+2506    2015     15        Carlos Sainz      Toro Rosso    20        16       Brakes
+2738    2016      7     Kevin Magnussen         Renault    22        16      +2 Laps
+
+=== 4. RINGKASAN HASIL BERSIH ===
+Total baris        : 7329
+Finish / DNF       : 6031 / 1298
+Start dari pit lane: 56
+Balapan dengan tepat 1 pemenang: 348 dari 348
+
+Semua status beserta klasifikasinya (finish/DNF):
+                  jumlah  finish
+status                          
+Finished            3850    True
++1 Lap              1342    True
+Lapped               414    True
++2 Laps              314    True
+Retired              287   False
+Collision            215   False
+Accident             122   False
+Engine                90   False
++3 Laps               67    True
+Gearbox               63   False
+Brakes                53   False
+Collision damage      47   False
+Suspension            43   False
+Hydraulics            43   False
+Power Unit            41   False
++4 Laps               22    True
+Wheel                 21   False
+Disqualified          19   False
+Electrical            18   False
+Did not start         16   False
+Spun off              15   False
+Withdrew              14   False
+Oil leak              14   False
+Puncture              13   False
+Mechanical            12   False
+Power loss            12   False
++5 Laps               10    True
+Transmission           8   False
+Fuel pressure          8   False
+Wheel nut              8   False
+Water pressure         7   False
+Exhaust                7   False
+Turbo                  6   False
+Overheating            6   False
+Water leak             6   False
+ERS                    5   False
+Clutch                 5   False
+Electronics            5   False
+Battery                5   False
+Tyre                   5   False
+Rear wing              5   False
+Vibrations             5   False
+Throttle               4   False
+Front wing             4   False
++6 Laps                3    True
+Alternator             3   False
+Driveshaft             3   False
+Steering               3   False
+Undertray              3   False
+Fuel system            2   False
++9 Laps                2    True
++10 Laps               2    True
+Technical              2   False
++8 Laps                2    True
+Illness                2   False
+Oil pressure           2   False
+Damage                 2   False
+Fuel pump              2   False
++42 Laps               1    True
++11 Laps               1    True
++14 Laps               1    True
+Brake duct             1   False
+Injury                 1   False
+Heat shield fire       1   False
+Excluded               1   False
+Fuel leak              1   False
+Engine misfire         1   False
+Debris                 1   False
+Differential           1   False
+Drivetrain             1   False
+Cooling system         1   False
+Spark plugs            1   False
+Radiator               1   False
+Pneumatics             1   False
+Out of fuel            1   False
+Seat                   1   False
+Track rod              1   False
+Water pump             1   False
+
+Contoh 5 baris:
+   season  round            driver  grid  grid_adj  position  finished  positions_gained
+0    2010      1   Fernando Alonso     3         3         1      True               2.0
+1    2010      1      Felipe Massa     2         2         2      True               0.0
+2    2010      1    Lewis Hamilton     4         4         3      True               1.0
+3    2010      1  Sebastian Vettel     1         1         4      True              -3.0
+4    2010      1      Nico Rosberg     5         5         5      True               0.0

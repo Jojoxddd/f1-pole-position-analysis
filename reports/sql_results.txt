@@ -1,0 +1,157 @@
+
+=== Q1: Jumlah balapan dan jumlah entri per musim (cek kelengkapan data) ===
+ season  balapan  entri_pembalap
+   2010       19             456
+   2011       19             454
+   2012       20             478
+   2013       19             418
+   2014       19             407
+   2015       19             378
+   2016       21             462
+   2017       20             400
+   2018       21             420
+   2019       21             420
+   2020       17             340
+   2021       22             440
+   2022       22             440
+   2023       22             440
+   2024       24             479
+   2025       24             479
+   2026       19             418
+
+=== Q2: Berapa persen balapan dimenangkan pembalap yang start dari P1 (2010 - sekarang)? ===
+ balapan  menang_dari_p1  persen_menang_dari_p1  podium_dari_p1  persen_podium_dari_p1
+     348             185                   53.2             280                   80.5
+
+=== Q3: Peluang menang, podium, dan DNF berdasarkan posisi start (P1 - P10) ===
+ posisi_start  jumlah_start  menang  persen_menang  persen_podium  persen_dnf
+            1           348     185           53.2           80.5         8.3
+            2           347      87           25.1           69.5         8.6
+            3           348      35           10.1           50.6        11.5
+            4           348      12            3.4           36.8        11.8
+            5           348       7            2.0           19.8        15.2
+            6           348       7            2.0           12.6        12.4
+            7           347       3            0.9            8.1        13.5
+            8           347       2            0.6            2.9        18.4
+            9           348       1            0.3            3.7        18.7
+           10           346       4            1.2            3.8        16.8
+
+=== Q4: Rata-rata posisi yang didapat/hilang berdasarkan posisi start (hanya yang finish) ===
+ posisi_start  jumlah_finish  rata2_posisi_naik
+            1            319              -1.03
+            2            317              -0.97
+            3            308              -0.86
+            4            307              -0.33
+            5            295              -0.60
+            6            305              -0.38
+            7            300              -0.47
+            8            283              -0.21
+            9            283               0.34
+           10            288               0.68
+           11            285               1.06
+           12            273               1.51
+           13            273               1.79
+           14            281               1.88
+           15            278               2.85
+           16            264               3.09
+           17            279               3.56
+           18            270               3.90
+           19            268               4.75
+           20            238               5.36
+
+=== Q5: Persentase menang dari P1 per sirkuit (minimal 8 balapan) ===
+                       sirkuit  balapan  menang_dari_p1  persen_menang_dari_p1
+            Yas Marina Circuit       16              12                   75.0
+     Marina Bay Street Circuit       15              11                   73.3
+             Circuit de Monaco       16              11                   68.8
+                Suzuka Circuit       15              10                   66.7
+Shanghai International Circuit       13               8                   61.5
+    Autódromo José Carlos Pace       15               9                   60.0
+                 Red Bull Ring       15               9                   60.0
+     Circuit Gilles Villeneuve       15               9                   60.0
+Circuit de Barcelona-Catalunya       17              10                   58.8
+  Autodromo Nazionale di Monza       17               9                   52.9
+  Circuit de Spa-Francorchamps       17               9                   52.9
+ Bahrain International Circuit       16               8                   50.0
+       Circuit of the Americas       14               7                   50.0
+  Autódromo Hermanos Rodríguez       11               5                   45.5
+  Sepang International Circuit        9               4                   44.4
+Albert Park Grand Prix Circuit       15               6                   40.0
+             Baku City Circuit       10               4                   40.0
+                   Hungaroring       17               6                   35.3
+           Silverstone Circuit       18               6                   33.3
+                Sochi Autodrom        8               2                   25.0
+
+=== Q6: Tren per musim: persen menang dari P1 (musim terakhir mungkin belum lengkap) ===
+ season  balapan  menang_dari_p1  persen_menang_dari_p1
+   2010       19               8                   42.1
+   2011       19               9                   47.4
+   2012       20              10                   50.0
+   2013       19              10                   52.6
+   2014       19               9                   47.4
+   2015       19              12                   63.2
+   2016       21              13                   61.9
+   2017       20              11                   55.0
+   2018       21              10                   47.6
+   2019       21               8                   38.1
+   2020       17              10                   58.8
+   2021       22              11                   50.0
+   2022       22              10                   45.5
+   2023       22              14                   63.6
+   2024       24              11                   45.8
+   2025       24              16                   66.7
+   2026       19              13                   68.4
+
+=== Q7: Tiga tim dengan poin terbanyak per musim (window function) ===
+ season  peringkat  constructor  total_poin
+   2010          1     Red Bull       498.0
+   2010          2      McLaren       454.0
+   2010          3      Ferrari       396.0
+   2011          1     Red Bull       650.0
+   2011          2      McLaren       497.0
+   2011          3      Ferrari       375.0
+   2012          1     Red Bull       460.0
+   2012          2      Ferrari       400.0
+   2012          3      McLaren       378.0
+   2013          1     Red Bull       596.0
+   2013          2     Mercedes       360.0
+   2013          3      Ferrari       354.0
+   2014          1     Mercedes       701.0
+   2014          2     Red Bull       405.0
+   2014          3     Williams       320.0
+   2015          1     Mercedes       703.0
+   2015          2      Ferrari       428.0
+   2015          3     Williams       257.0
+   2016          1     Mercedes       765.0
+   2016          2     Red Bull       468.0
+   2016          3      Ferrari       398.0
+   2017          1     Mercedes       668.0
+   2017          2      Ferrari       522.0
+   2017          3     Red Bull       368.0
+   2018          1     Mercedes       655.0
+   2018          2      Ferrari       571.0
+   2018          3     Red Bull       419.0
+   2019          1     Mercedes       739.0
+   2019          2      Ferrari       504.0
+   2019          3     Red Bull       417.0
+   2020          1     Mercedes       573.0
+   2020          2     Red Bull       319.0
+   2020          3 Racing Point       210.0
+   2021          1     Mercedes       604.5
+   2021          2     Red Bull       578.5
+   2021          3      Ferrari       322.5
+   2022          1     Red Bull       724.0
+   2022          2      Ferrari       519.0
+   2022          3     Mercedes       495.0
+   2023          1     Red Bull       790.0
+   2023          2     Mercedes       374.0
+   2023          3      Ferrari       363.0
+   2024          1      McLaren       609.0
+   2024          2      Ferrari       595.0
+   2024          3     Red Bull       537.0
+   2025          1      McLaren       775.0
+   2025          2     Mercedes       424.0
+   2025          3     Red Bull       410.0
+   2026          1     Mercedes       565.0
+   2026          2      Ferrari       443.0
+   2026          3     Red Bull       362.0

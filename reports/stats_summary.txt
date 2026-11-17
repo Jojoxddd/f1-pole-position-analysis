@@ -1,0 +1,17 @@
+=== 1. PELUANG MENANG PER POSISI START (dengan interval kepercayaan 95%) ===
+Start P1: menang 53.2% (95% CI 47.9-58.3%), n=348
+Start P2: menang 25.1% (95% CI 20.8-29.9%), n=347
+Start P3: menang 10.1% (95% CI 7.3-13.7%), n=348
+
+=== 2. ANTAR SIRKUIT (20 sirkuit, minimal 8 balapan) ===
+Rata-rata gabungan: 53.6%
+Chi-square homogenitas: chi2=19.57, dof=19, p=0.421
+Uji simulasi         : p=0.415
+Tafsir: p >= 0.05, perbedaan antar sirkuit belum cukup kuat untuk dibedakan dari kebetulan (bukan berarti tidak ada perbedaan, bisa jadi sampelnya terlalu kecil).
+Tertinggi: Yas Marina Circuit 75% (CI 51-90%, n=16)
+Terendah : Sochi Autodrom 25% (CI 7-59%, n=8)
+
+=== 3. ANTAR MUSIM (2010-2025, musim 2026 tidak dihitung karena belum lengkap) ===
+Chi-square homogenitas: chi2=9.09, dof=15, p=0.873
+Tren linear: +0.52 poin persen per tahun (p=0.273)
+Tafsir: p >= 0.05, perbedaan antar musim belum cukup kuat untuk dibedakan dari kebetulan (bukan berarti tidak ada perbedaan, bisa jadi sampelnya terlalu kecil).
